@@ -1,11 +1,11 @@
 # docker-openldap-phpldapadmin
 ---
 
-$ cat .env
-LDAP_ORGANISATION=4wxyz
-LDAP_DOMAIN=4wxyz.com
-LDAP_ADMIN_PASSWORD=YourPassWord
+$ cat .env<br>
+LDAP_ORGANISATION=4wxyz<br>
+LDAP_DOMAIN=4wxyz.com<br>
+LDAP_ADMIN_PASSWORD=YourPassWord<br>
 
 ---
-cn=admin,dc=4wxyz,dc=com
-YourPassWord
+cn=admin,dc=4wxyz,dc=com<br>
+YourPassWord<br>

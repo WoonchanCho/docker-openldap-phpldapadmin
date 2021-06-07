@@ -7,5 +7,5 @@ LDAP_DOMAIN=4wxyz.com<br>
 LDAP_ADMIN_PASSWORD=YourPassWord<br>
 
 ---
-cn=admin,dc=4wxyz,dc=com<br>
-YourPassWord<br>
+Login DN: cn=admin,dc=4wxyz,dc=com<br>
+Password: YourPassWord<br>

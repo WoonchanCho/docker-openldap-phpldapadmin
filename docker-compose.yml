@@ -10,10 +10,11 @@ services:
       TZ: Asia/Seoul
       LDAP_ORGANISATION: "${LDAP_ORGANISATION}"
       LDAP_DOMAIN: "${LDAP_DOMAIN}"
+      LDAP_BASE_DN: "${LDAP_BASE_DN}"
       LDAP_ADMIN_PASSWORD: "${LDAP_ADMIN_PASSWORD}"
     volumes:
-      - ./slapd/database:/var/lib/ldap
       - ./slapd/config:/etc/ldap/slapd.d
+      - ./slapd/database:/var/lib/ldap
     ports:
       - 389:389
       - 636:636
@@ -27,7 +28,10 @@ services:
     environment:
       TZ: Asia/Seoul
       PHPLDAPADMIN_LDAP_HOSTS: "openldap"
-      #PHPLDAPADMIN_HTTPS: "false"
+      PHPLDAPADMIN_HTTPS: "false"
+    #volumes:
+    #  - ./pla/config:/container/service/phpldapadmin/assets/config
+    #  - ./pla/phpldapadmin:/var/www/phpldapadmin
     ports:
       - 8080:80
       - 8443:443

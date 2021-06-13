@@ -1,0 +1,9 @@
+dn: cn=aaagroup,ou=Groups,dc=4wxyz,dc=com
+changetype: add
+objectClass: top
+objectClass: posixGroup
+objectClass: groupOfUniqueNames
+gidNumber: 2345
+cn: aaagroup
+# uniqueMember: <DN of member>
+description: groups

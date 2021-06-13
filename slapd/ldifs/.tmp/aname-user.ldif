@@ -1,0 +1,18 @@
+dn: uid=aname,ou=People,dc=4wxyz,dc=com
+uid: aname
+cn: faname laname
+sn: laname
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetorgperson
+objectClass: posixAccount
+givenName: faname
+mail: aname@dc=4wxyz,dc=com
+gecos: faname laname
+loginShell: /bin/bash
+uidNumber: 1702
+gidNumber: 1702
+homeDirectory: /home/aname
+userPassword: {SSHA}UZrWRlhxpXK+aAfPGz5B+wloR+Iaw9TV
+description: description
